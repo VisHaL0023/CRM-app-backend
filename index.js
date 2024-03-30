@@ -29,6 +29,7 @@ ticketRoutes(app);
 mongoose.connect(mongoDbUri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
+  family: 4,
 });
 const db = mongoose.connection;
 
